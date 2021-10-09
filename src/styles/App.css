@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --primary: #002975;
+    --secondary: #0044C2;
+
+    --white: #fefefe;
+
+    --sm: 1.7rem;
+    --md: 2.2rem;
+    --lg: 2.7em;
+    --x-lg: 3.2rem;
+
+    --font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+}

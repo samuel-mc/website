@@ -1,0 +1,618 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'i', 'webpack-dev-server' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData webpack-dev-server@^4.3.0
+8 silly fetchNamedPackageData webpack-dev-server
+9 silly mapToRegistry name webpack-dev-server
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/webpack-dev-server
+13 verbose request uri https://registry.npmjs.org/webpack-dev-server
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 10:54:45 AM
+16 verbose request id 76de2c36988de804
+17 verbose etag W/"fba80d5783e27b59116637866ab5804a"
+18 verbose lastModified Sat, 25 Sep 2021 14:38:10 GMT
+19 http request GET https://registry.npmjs.org/webpack-dev-server
+20 http 304 https://registry.npmjs.org/webpack-dev-server
+21 verbose headers { date: 'Sat, 02 Oct 2021 15:54:46 GMT',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'cf-ray': '697f1c756af77f48-QRO',
+21 verbose headers   'cache-control': 'public, max-age=300',
+21 verbose headers   etag: '"fba80d5783e27b59116637866ab5804a"',
+21 verbose headers   'last-modified': 'Sat, 25 Sep 2021 14:38:10 GMT',
+21 verbose headers   vary: 'Accept-Encoding',
+21 verbose headers   'cf-cache-status': 'HIT',
+21 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+21 verbose headers   'x-amz-replication-status': 'PENDING',
+21 verbose headers   server: 'cloudflare' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Sat, 02 Oct 2021 15:54:46 GMT',
+22 silly get     connection: 'keep-alive',
+22 silly get     'cf-ray': '697f1c756af77f48-QRO',
+22 silly get     'cache-control': 'public, max-age=300',
+22 silly get     etag: '"fba80d5783e27b59116637866ab5804a"',
+22 silly get     'last-modified': 'Sat, 25 Sep 2021 14:38:10 GMT',
+22 silly get     vary: 'Accept-Encoding',
+22 silly get     'cf-cache-status': 'HIT',
+22 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+22 silly get     'x-amz-replication-status': 'PENDING',
+22 silly get     server: 'cloudflare' } ]
+23 verbose etag https://registry.npmjs.org/webpack-dev-server from cache
+24 verbose get saving webpack-dev-server to /home/samuel/.npm/registry.npmjs.org/webpack-dev-server/.cache.json
+25 silly install normalizeTree
+26 silly loadCurrentTree Finishing
+27 silly loadIdealTree Starting
+28 silly install loadIdealTree
+29 silly cloneCurrentTree Starting
+30 silly install cloneCurrentTreeToIdealTree
+31 silly cloneCurrentTree Finishing
+32 silly loadShrinkwrap Starting
+33 silly install loadShrinkwrap
+34 silly loadShrinkwrap Finishing
+35 silly loadAllDepsIntoIdealTree Starting
+36 silly install loadAllDepsIntoIdealTree
+37 silly resolveWithNewModule webpack-dev-server@4.3.0 checking installable status
+38 silly cache add args [ 'webpack-dev-server@^4.3.0', null ]
+39 verbose cache add spec webpack-dev-server@^4.3.0
+40 silly cache add parsed spec Result {
+40 silly cache add   raw: 'webpack-dev-server@^4.3.0',
+40 silly cache add   scope: null,
+40 silly cache add   name: 'webpack-dev-server',
+40 silly cache add   rawSpec: '^4.3.0',
+40 silly cache add   spec: '>=4.3.0 <5.0.0',
+40 silly cache add   type: 'range' }
+41 silly addNamed webpack-dev-server@>=4.3.0 <5.0.0
+42 verbose addNamed ">=4.3.0 <5.0.0" is a valid semver range for webpack-dev-server
+43 silly addNameRange { name: 'webpack-dev-server',
+43 silly addNameRange   range: '>=4.3.0 <5.0.0',
+43 silly addNameRange   hasData: false }
+44 silly mapToRegistry name webpack-dev-server
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry uri https://registry.npmjs.org/webpack-dev-server
+48 verbose addNameRange registry:https://registry.npmjs.org/webpack-dev-server not in flight; fetching
+49 verbose get https://registry.npmjs.org/webpack-dev-server not expired, no request
+50 silly addNameRange number 2 { name: 'webpack-dev-server',
+50 silly addNameRange   range: '>=4.3.0 <5.0.0',
+50 silly addNameRange   hasData: true }
+51 silly addNameRange versions [ 'webpack-dev-server',
+51 silly addNameRange   [ '0.6.0',
+51 silly addNameRange     '0.6.1',
+51 silly addNameRange     '0.6.2',
+51 silly addNameRange     '0.7.0',
+51 silly addNameRange     '0.7.1',
+51 silly addNameRange     '0.7.2',
+51 silly addNameRange     '0.8.0',
+51 silly addNameRange     '0.8.1',
+51 silly addNameRange     '0.8.2',
+51 silly addNameRange     '0.9.0',
+51 silly addNameRange     '0.9.1',
+51 silly addNameRange     '0.9.2',
+51 silly addNameRange     '0.9.3',
+51 silly addNameRange     '0.9.4',
+51 silly addNameRange     '0.10.0',
+51 silly addNameRange     '0.10.1',
+51 silly addNameRange     '0.11.0',
+51 silly addNameRange     '0.11.1',
+51 silly addNameRange     '1.0.0',
+51 silly addNameRange     '1.0.1',
+51 silly addNameRange     '1.0.2',
+51 silly addNameRange     '1.1.0',
+51 silly addNameRange     '1.2.0',
+51 silly addNameRange     '1.2.1',
+51 silly addNameRange     '1.2.2',
+51 silly addNameRange     '1.2.3',
+51 silly addNameRange     '1.2.4',
+51 silly addNameRange     '1.2.5',
+51 silly addNameRange     '1.2.6',
+51 silly addNameRange     '1.2.7',
+51 silly addNameRange     '1.2.8',
+51 silly addNameRange     '1.2.9',
+51 silly addNameRange     '1.3.0',
+51 silly addNameRange     '1.3.1',
+51 silly addNameRange     '1.3.2',
+51 silly addNameRange     '1.4.0',
+51 silly addNameRange     '1.4.1',
+51 silly addNameRange     '1.4.2',
+51 silly addNameRange     '1.4.3',
+51 silly addNameRange     '1.4.4',
+51 silly addNameRange     '1.4.5',
+51 silly addNameRange     '1.4.6',
+51 silly addNameRange     '1.4.7',
+51 silly addNameRange     '1.4.9',
+51 silly addNameRange     '1.4.10',
+51 silly addNameRange     '1.5.0',
+51 silly addNameRange     '1.6.0',
+51 silly addNameRange     '1.6.1',
+51 silly addNameRange     '1.6.2',
+51 silly addNameRange     '1.6.3',
+51 silly addNameRange     '1.6.4',
+51 silly addNameRange     '1.6.5',
+51 silly addNameRange     '1.6.6',
+51 silly addNameRange     '1.7.0',
+51 silly addNameRange     '1.8.0',
+51 silly addNameRange     '1.8.1',
+51 silly addNameRange     '1.8.2',
+51 silly addNameRange     '1.9.0',
+51 silly addNameRange     '1.10.0',
+51 silly addNameRange     '1.10.1',
+51 silly addNameRange     '1.11.0',
+51 silly addNameRange     '1.12.0',
+51 silly addNameRange     '1.12.1',
+51 silly addNameRange     '1.13.0',
+51 silly addNameRange     '1.14.0',
+51 silly addNameRange     '1.14.1',
+51 silly addNameRange     '2.0.0-beta',
+51 silly addNameRange     '2.1.0-beta.0',
+51 silly addNameRange     '1.15.0',
+51 silly addNameRange     '2.1.0-beta.1',
+51 silly addNameRange     '2.1.0-beta.2',
+51 silly addNameRange     '1.15.1',
+51 silly addNameRange     '2.1.0-beta.3',
+51 silly addNameRange     '2.1.0-beta.4',
+51 silly addNameRange     '1.15.2',
+51 silly addNameRange     '1.16.0',
+51 silly addNameRange     '1.16.1',
+51 silly addNameRange     '2.1.0-beta.5',
+51 silly addNameRange     '2.1.0-beta.6',
+51 silly addNameRange     '2.1.0-beta.7',
+51 silly addNameRange     '2.1.0-beta.8',
+51 silly addNameRange     '1.16.2',
+51 silly addNameRange     '2.1.0-beta.9',
+51 silly addNameRange     '2.1.0-beta.10',
+51 silly addNameRange     '2.1.0-beta.11',
+51 silly addNameRange     '2.1.0-beta.12',
+51 silly addNameRange     '2.2.0-rc.0',
+51 silly addNameRange     '2.2.0',
+51 silly addNameRange     '2.2.1',
+51 silly addNameRange     '1.16.3',
+51 silly addNameRange     '2.3.0',
+51 silly addNameRange     '2.4.0',
+51 silly addNameRange     '2.4.1',
+51 silly addNameRange     '2.4.2',
+51 silly addNameRange     '2.4.3',
+51 silly addNameRange     '1.16.4',
+51 silly addNameRange     '2.4.4',
+51 silly addNameRange     '2.4.5',
+51 silly addNameRange     '1.16.5',
+51 silly addNameRange     '2.5.0',
+51 silly addNameRange     ... 83 more items ] ]
+52 silly addNamed webpack-dev-server@4.3.0
+53 verbose addNamed "4.3.0" is a plain semver version for webpack-dev-server
+54 silly cache afterAdd webpack-dev-server@4.3.0
+55 verbose afterAdd /home/samuel/.npm/webpack-dev-server/4.3.0/package/package.json not in flight; writing
+56 verbose afterAdd /home/samuel/.npm/webpack-dev-server/4.3.0/package/package.json written
+57 silly fetchNamedPackageData ansi-html-community
+58 silly mapToRegistry name ansi-html-community
+59 silly mapToRegistry using default registry
+60 silly mapToRegistry registry https://registry.npmjs.org/
+61 silly mapToRegistry uri https://registry.npmjs.org/ansi-html-community
+62 silly fetchNamedPackageData bonjour
+63 silly mapToRegistry name bonjour
+64 silly mapToRegistry using default registry
+65 silly mapToRegistry registry https://registry.npmjs.org/
+66 silly mapToRegistry uri https://registry.npmjs.org/bonjour
+67 silly fetchNamedPackageData chokidar
+68 silly mapToRegistry name chokidar
+69 silly mapToRegistry using default registry
+70 silly mapToRegistry registry https://registry.npmjs.org/
+71 silly mapToRegistry uri https://registry.npmjs.org/chokidar
+72 silly fetchNamedPackageData colorette
+73 silly mapToRegistry name colorette
+74 silly mapToRegistry using default registry
+75 silly mapToRegistry registry https://registry.npmjs.org/
+76 silly mapToRegistry uri https://registry.npmjs.org/colorette
+77 silly fetchNamedPackageData compression
+78 silly mapToRegistry name compression
+79 silly mapToRegistry using default registry
+80 silly mapToRegistry registry https://registry.npmjs.org/
+81 silly mapToRegistry uri https://registry.npmjs.org/compression
+82 silly fetchNamedPackageData connect-history-api-fallback
+83 silly mapToRegistry name connect-history-api-fallback
+84 silly mapToRegistry using default registry
+85 silly mapToRegistry registry https://registry.npmjs.org/
+86 silly mapToRegistry uri https://registry.npmjs.org/connect-history-api-fallback
+87 silly fetchNamedPackageData del
+88 silly mapToRegistry name del
+89 silly mapToRegistry using default registry
+90 silly mapToRegistry registry https://registry.npmjs.org/
+91 silly mapToRegistry uri https://registry.npmjs.org/del
+92 silly fetchNamedPackageData express
+93 silly mapToRegistry name express
+94 silly mapToRegistry using default registry
+95 silly mapToRegistry registry https://registry.npmjs.org/
+96 silly mapToRegistry uri https://registry.npmjs.org/express
+97 silly fetchNamedPackageData html-entities
+98 silly mapToRegistry name html-entities
+99 silly mapToRegistry using default registry
+100 silly mapToRegistry registry https://registry.npmjs.org/
+101 silly mapToRegistry uri https://registry.npmjs.org/html-entities
+102 silly fetchNamedPackageData http-proxy-middleware
+103 silly mapToRegistry name http-proxy-middleware
+104 silly mapToRegistry using default registry
+105 silly mapToRegistry registry https://registry.npmjs.org/
+106 silly mapToRegistry uri https://registry.npmjs.org/http-proxy-middleware
+107 silly fetchNamedPackageData internal-ip
+108 silly mapToRegistry name internal-ip
+109 silly mapToRegistry using default registry
+110 silly mapToRegistry registry https://registry.npmjs.org/
+111 silly mapToRegistry uri https://registry.npmjs.org/internal-ip
+112 silly fetchNamedPackageData ipaddr.js
+113 silly mapToRegistry name ipaddr.js
+114 silly mapToRegistry using default registry
+115 silly mapToRegistry registry https://registry.npmjs.org/
+116 silly mapToRegistry uri https://registry.npmjs.org/ipaddr.js
+117 silly fetchNamedPackageData open
+118 silly mapToRegistry name open
+119 silly mapToRegistry using default registry
+120 silly mapToRegistry registry https://registry.npmjs.org/
+121 silly mapToRegistry uri https://registry.npmjs.org/open
+122 silly fetchNamedPackageData p-retry
+123 silly mapToRegistry name p-retry
+124 silly mapToRegistry using default registry
+125 silly mapToRegistry registry https://registry.npmjs.org/
+126 silly mapToRegistry uri https://registry.npmjs.org/p-retry
+127 silly fetchNamedPackageData portfinder
+128 silly mapToRegistry name portfinder
+129 silly mapToRegistry using default registry
+130 silly mapToRegistry registry https://registry.npmjs.org/
+131 silly mapToRegistry uri https://registry.npmjs.org/portfinder
+132 silly fetchNamedPackageData selfsigned
+133 silly mapToRegistry name selfsigned
+134 silly mapToRegistry using default registry
+135 silly mapToRegistry registry https://registry.npmjs.org/
+136 silly mapToRegistry uri https://registry.npmjs.org/selfsigned
+137 silly fetchNamedPackageData serve-index
+138 silly mapToRegistry name serve-index
+139 silly mapToRegistry using default registry
+140 silly mapToRegistry registry https://registry.npmjs.org/
+141 silly mapToRegistry uri https://registry.npmjs.org/serve-index
+142 silly fetchNamedPackageData sockjs
+143 silly mapToRegistry name sockjs
+144 silly mapToRegistry using default registry
+145 silly mapToRegistry registry https://registry.npmjs.org/
+146 silly mapToRegistry uri https://registry.npmjs.org/sockjs
+147 silly fetchNamedPackageData spdy
+148 silly mapToRegistry name spdy
+149 silly mapToRegistry using default registry
+150 silly mapToRegistry registry https://registry.npmjs.org/
+151 silly mapToRegistry uri https://registry.npmjs.org/spdy
+152 silly fetchNamedPackageData strip-ansi
+153 silly mapToRegistry name strip-ansi
+154 silly mapToRegistry using default registry
+155 silly mapToRegistry registry https://registry.npmjs.org/
+156 silly mapToRegistry uri https://registry.npmjs.org/strip-ansi
+157 silly fetchNamedPackageData url
+158 silly mapToRegistry name url
+159 silly mapToRegistry using default registry
+160 silly mapToRegistry registry https://registry.npmjs.org/
+161 silly mapToRegistry uri https://registry.npmjs.org/url
+162 silly fetchNamedPackageData webpack-dev-middleware
+163 silly mapToRegistry name webpack-dev-middleware
+164 silly mapToRegistry using default registry
+165 silly mapToRegistry registry https://registry.npmjs.org/
+166 silly mapToRegistry uri https://registry.npmjs.org/webpack-dev-middleware
+167 silly fetchNamedPackageData ws
+168 silly mapToRegistry name ws
+169 silly mapToRegistry using default registry
+170 silly mapToRegistry registry https://registry.npmjs.org/
+171 silly mapToRegistry uri https://registry.npmjs.org/ws
+172 verbose request uri https://registry.npmjs.org/ansi-html-community
+173 verbose request no auth needed
+174 info attempt registry request try #1 at 10:54:46 AM
+175 http request GET https://registry.npmjs.org/ansi-html-community
+176 verbose request uri https://registry.npmjs.org/bonjour
+177 verbose request no auth needed
+178 info attempt registry request try #1 at 10:54:46 AM
+179 http request GET https://registry.npmjs.org/bonjour
+180 verbose request uri https://registry.npmjs.org/chokidar
+181 verbose request no auth needed
+182 info attempt registry request try #1 at 10:54:46 AM
+183 http request GET https://registry.npmjs.org/chokidar
+184 verbose request uri https://registry.npmjs.org/colorette
+185 verbose request no auth needed
+186 info attempt registry request try #1 at 10:54:46 AM
+187 http request GET https://registry.npmjs.org/colorette
+188 verbose request uri https://registry.npmjs.org/compression
+189 verbose request no auth needed
+190 info attempt registry request try #1 at 10:54:46 AM
+191 http request GET https://registry.npmjs.org/compression
+192 verbose request uri https://registry.npmjs.org/connect-history-api-fallback
+193 verbose request no auth needed
+194 info attempt registry request try #1 at 10:54:46 AM
+195 http request GET https://registry.npmjs.org/connect-history-api-fallback
+196 verbose request uri https://registry.npmjs.org/del
+197 verbose request no auth needed
+198 info attempt registry request try #1 at 10:54:46 AM
+199 http request GET https://registry.npmjs.org/del
+200 verbose request uri https://registry.npmjs.org/express
+201 verbose request no auth needed
+202 info attempt registry request try #1 at 10:54:46 AM
+203 http request GET https://registry.npmjs.org/express
+204 verbose request uri https://registry.npmjs.org/html-entities
+205 verbose request no auth needed
+206 info attempt registry request try #1 at 10:54:46 AM
+207 http request GET https://registry.npmjs.org/html-entities
+208 verbose request uri https://registry.npmjs.org/http-proxy-middleware
+209 verbose request no auth needed
+210 info attempt registry request try #1 at 10:54:46 AM
+211 http request GET https://registry.npmjs.org/http-proxy-middleware
+212 verbose request uri https://registry.npmjs.org/internal-ip
+213 verbose request no auth needed
+214 info attempt registry request try #1 at 10:54:46 AM
+215 http request GET https://registry.npmjs.org/internal-ip
+216 verbose request uri https://registry.npmjs.org/ipaddr.js
+217 verbose request no auth needed
+218 info attempt registry request try #1 at 10:54:46 AM
+219 http request GET https://registry.npmjs.org/ipaddr.js
+220 verbose request uri https://registry.npmjs.org/open
+221 verbose request no auth needed
+222 info attempt registry request try #1 at 10:54:46 AM
+223 http request GET https://registry.npmjs.org/open
+224 verbose request uri https://registry.npmjs.org/p-retry
+225 verbose request no auth needed
+226 info attempt registry request try #1 at 10:54:46 AM
+227 http request GET https://registry.npmjs.org/p-retry
+228 verbose request uri https://registry.npmjs.org/portfinder
+229 verbose request no auth needed
+230 info attempt registry request try #1 at 10:54:46 AM
+231 http request GET https://registry.npmjs.org/portfinder
+232 verbose request uri https://registry.npmjs.org/selfsigned
+233 verbose request no auth needed
+234 info attempt registry request try #1 at 10:54:46 AM
+235 http request GET https://registry.npmjs.org/selfsigned
+236 verbose request uri https://registry.npmjs.org/serve-index
+237 verbose request no auth needed
+238 info attempt registry request try #1 at 10:54:46 AM
+239 http request GET https://registry.npmjs.org/serve-index
+240 verbose request uri https://registry.npmjs.org/sockjs
+241 verbose request no auth needed
+242 info attempt registry request try #1 at 10:54:46 AM
+243 http request GET https://registry.npmjs.org/sockjs
+244 verbose request uri https://registry.npmjs.org/spdy
+245 verbose request no auth needed
+246 info attempt registry request try #1 at 10:54:46 AM
+247 http request GET https://registry.npmjs.org/spdy
+248 verbose request uri https://registry.npmjs.org/strip-ansi
+249 verbose request no auth needed
+250 info attempt registry request try #1 at 10:54:46 AM
+251 http request GET https://registry.npmjs.org/strip-ansi
+252 verbose request uri https://registry.npmjs.org/url
+253 verbose request no auth needed
+254 info attempt registry request try #1 at 10:54:46 AM
+255 http request GET https://registry.npmjs.org/url
+256 verbose request uri https://registry.npmjs.org/webpack-dev-middleware
+257 verbose request no auth needed
+258 info attempt registry request try #1 at 10:54:46 AM
+259 http request GET https://registry.npmjs.org/webpack-dev-middleware
+260 verbose request uri https://registry.npmjs.org/ws
+261 verbose request no auth needed
+262 info attempt registry request try #1 at 10:54:46 AM
+263 http request GET https://registry.npmjs.org/ws
+264 http 200 https://registry.npmjs.org/ansi-html-community
+265 verbose headers { date: 'Sat, 02 Oct 2021 15:54:46 GMT',
+265 verbose headers   'content-type': 'application/json',
+265 verbose headers   'transfer-encoding': 'chunked',
+265 verbose headers   connection: 'keep-alive',
+265 verbose headers   'cf-ray': '697f1c7acd9f7f48-QRO',
+265 verbose headers   'cache-control': 'public, max-age=300',
+265 verbose headers   etag: 'W/"28d7b39a4f5534c7f031d95125028e5c"',
+265 verbose headers   'last-modified': 'Sun, 05 Sep 2021 09:42:40 GMT',
+265 verbose headers   vary: 'accept-encoding, accept',
+265 verbose headers   'cf-cache-status': 'HIT',
+265 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+265 verbose headers   'x-amz-replication-status': 'PENDING',
+265 verbose headers   server: 'cloudflare',
+265 verbose headers   'content-encoding': 'gzip' }
+266 silly get cb [ 200,
+266 silly get   { date: 'Sat, 02 Oct 2021 15:54:46 GMT',
+266 silly get     'content-type': 'application/json',
+266 silly get     'transfer-encoding': 'chunked',
+266 silly get     connection: 'keep-alive',
+266 silly get     'cf-ray': '697f1c7acd9f7f48-QRO',
+266 silly get     'cache-control': 'public, max-age=300',
+266 silly get     etag: 'W/"28d7b39a4f5534c7f031d95125028e5c"',
+266 silly get     'last-modified': 'Sun, 05 Sep 2021 09:42:40 GMT',
+266 silly get     vary: 'accept-encoding, accept',
+266 silly get     'cf-cache-status': 'HIT',
+266 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+266 silly get     'x-amz-replication-status': 'PENDING',
+266 silly get     server: 'cloudflare',
+266 silly get     'content-encoding': 'gzip' } ]
+267 verbose get saving ansi-html-community to /home/samuel/.npm/registry.npmjs.org/ansi-html-community/.cache.json
+268 silly resolveWithNewModule ansi-html-community@0.0.8 checking installable status
+269 silly cache add args [ 'ansi-html-community@^0.0.8', null ]
+270 verbose cache add spec ansi-html-community@^0.0.8
+271 silly cache add parsed spec Result {
+271 silly cache add   raw: 'ansi-html-community@^0.0.8',
+271 silly cache add   scope: null,
+271 silly cache add   name: 'ansi-html-community',
+271 silly cache add   rawSpec: '^0.0.8',
+271 silly cache add   spec: '>=0.0.8 <0.0.9',
+271 silly cache add   type: 'range' }
+272 silly addNamed ansi-html-community@>=0.0.8 <0.0.9
+273 verbose addNamed ">=0.0.8 <0.0.9" is a valid semver range for ansi-html-community
+274 silly addNameRange { name: 'ansi-html-community',
+274 silly addNameRange   range: '>=0.0.8 <0.0.9',
+274 silly addNameRange   hasData: false }
+275 silly mapToRegistry name ansi-html-community
+276 silly mapToRegistry using default registry
+277 silly mapToRegistry registry https://registry.npmjs.org/
+278 silly mapToRegistry uri https://registry.npmjs.org/ansi-html-community
+279 verbose addNameRange registry:https://registry.npmjs.org/ansi-html-community not in flight; fetching
+280 verbose get https://registry.npmjs.org/ansi-html-community not expired, no request
+281 silly addNameRange number 2 { name: 'ansi-html-community',
+281 silly addNameRange   range: '>=0.0.8 <0.0.9',
+281 silly addNameRange   hasData: true }
+282 silly addNameRange versions [ 'ansi-html-community', [ '0.0.8' ] ]
+283 silly addNamed ansi-html-community@0.0.8
+284 verbose addNamed "0.0.8" is a plain semver version for ansi-html-community
+285 silly mapToRegistry name ansi-html-community
+286 silly mapToRegistry using default registry
+287 silly mapToRegistry registry https://registry.npmjs.org/
+288 silly mapToRegistry uri https://registry.npmjs.org/ansi-html-community
+289 verbose addRemoteTarball https://registry.npmjs.org/ansi-html-community/-/ansi-html-community-0.0.8.tgz not in flight; adding
+290 verbose addRemoteTarball [ 'https://registry.npmjs.org/ansi-html-community/-/ansi-html-community-0.0.8.tgz',
+290 verbose addRemoteTarball   '69fbc4d6ccbe383f9736934ae34c3f8290f1bf41' ]
+291 info retry fetch attempt 1 at 10:54:46 AM
+292 info attempt registry request try #1 at 10:54:46 AM
+293 http fetch GET https://registry.npmjs.org/ansi-html-community/-/ansi-html-community-0.0.8.tgz
+294 http 200 https://registry.npmjs.org/compression
+295 verbose headers { date: 'Sat, 02 Oct 2021 15:54:46 GMT',
+295 verbose headers   'content-type': 'application/json',
+295 verbose headers   'transfer-encoding': 'chunked',
+295 verbose headers   connection: 'keep-alive',
+295 verbose headers   'cf-ray': '697f1c7b1c4ed0a4-QRO',
+295 verbose headers   'cache-control': 'public, max-age=300',
+295 verbose headers   etag: 'W/"f7d2ad9a2b003e80b56c8f5722459a23"',
+295 verbose headers   'last-modified': 'Sat, 21 Sep 2019 18:45:08 GMT',
+295 verbose headers   vary: 'accept-encoding, accept',
+295 verbose headers   'cf-cache-status': 'HIT',
+295 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+295 verbose headers   server: 'cloudflare',
+295 verbose headers   'content-encoding': 'gzip' }
+296 silly get cb [ 200,
+296 silly get   { date: 'Sat, 02 Oct 2021 15:54:46 GMT',
+296 silly get     'content-type': 'application/json',
+296 silly get     'transfer-encoding': 'chunked',
+296 silly get     connection: 'keep-alive',
+296 silly get     'cf-ray': '697f1c7b1c4ed0a4-QRO',
+296 silly get     'cache-control': 'public, max-age=300',
+296 silly get     etag: 'W/"f7d2ad9a2b003e80b56c8f5722459a23"',
+296 silly get     'last-modified': 'Sat, 21 Sep 2019 18:45:08 GMT',
+296 silly get     vary: 'accept-encoding, accept',
+296 silly get     'cf-cache-status': 'HIT',
+296 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+296 silly get     server: 'cloudflare',
+296 silly get     'content-encoding': 'gzip' } ]
+297 verbose get saving compression to /home/samuel/.npm/registry.npmjs.org/compression/.cache.json
+298 http 200 https://registry.npmjs.org/colorette
+299 verbose headers { date: 'Sat, 02 Oct 2021 15:54:46 GMT',
+299 verbose headers   'content-type': 'application/json',
+299 verbose headers   'transfer-encoding': 'chunked',
+299 verbose headers   connection: 'keep-alive',
+299 verbose headers   'cf-ray': '697f1c7b1acc7f78-QRO',
+299 verbose headers   'cache-control': 'public, max-age=300',
+299 verbose headers   etag: 'W/"e5133e1de0266434930bd98d71ce9384"',
+299 verbose headers   'last-modified': 'Fri, 01 Oct 2021 13:21:10 GMT',
+299 verbose headers   vary: 'accept-encoding, accept',
+299 verbose headers   'cf-cache-status': 'HIT',
+299 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+299 verbose headers   'x-amz-replication-status': 'COMPLETED',
+299 verbose headers   server: 'cloudflare',
+299 verbose headers   'content-encoding': 'gzip' }
+300 silly get cb [ 200,
+300 silly get   { date: 'Sat, 02 Oct 2021 15:54:46 GMT',
+300 silly get     'content-type': 'application/json',
+300 silly get     'transfer-encoding': 'chunked',
+300 silly get     connection: 'keep-alive',
+300 silly get     'cf-ray': '697f1c7b1acc7f78-QRO',
+300 silly get     'cache-control': 'public, max-age=300',
+300 silly get     etag: 'W/"e5133e1de0266434930bd98d71ce9384"',
+300 silly get     'last-modified': 'Fri, 01 Oct 2021 13:21:10 GMT',
+300 silly get     vary: 'accept-encoding, accept',
+300 silly get     'cf-cache-status': 'HIT',
+300 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+300 silly get     'x-amz-replication-status': 'COMPLETED',
+300 silly get     server: 'cloudflare',
+300 silly get     'content-encoding': 'gzip' } ]
+301 verbose get saving colorette to /home/samuel/.npm/registry.npmjs.org/colorette/.cache.json
+302 http fetch 200 https://registry.npmjs.org/ansi-html-community/-/ansi-html-community-0.0.8.tgz
+303 silly resolveWithNewModule compression@1.7.4 checking installable status
+304 silly cache add args [ 'compression@^1.7.4', null ]
+305 verbose cache add spec compression@^1.7.4
+306 silly cache add parsed spec Result {
+306 silly cache add   raw: 'compression@^1.7.4',
+306 silly cache add   scope: null,
+306 silly cache add   name: 'compression',
+306 silly cache add   rawSpec: '^1.7.4',
+306 silly cache add   spec: '>=1.7.4 <2.0.0',
+306 silly cache add   type: 'range' }
+307 silly addNamed compression@>=1.7.4 <2.0.0
+308 verbose addNamed ">=1.7.4 <2.0.0" is a valid semver range for compression
+309 silly addNameRange { name: 'compression', range: '>=1.7.4 <2.0.0', hasData: false }
+310 silly mapToRegistry name compression
+311 silly mapToRegistry using default registry
+312 silly mapToRegistry registry https://registry.npmjs.org/
+313 silly mapToRegistry uri https://registry.npmjs.org/compression
+314 verbose addNameRange registry:https://registry.npmjs.org/compression not in flight; fetching
+315 silly fetchAndShaCheck shasum 69fbc4d6ccbe383f9736934ae34c3f8290f1bf41
+316 verbose addTmpTarball /tmp/npm-1610-477a34ee/registry.npmjs.org/ansi-html-community/-/ansi-html-community-0.0.8.tgz not in flight; adding
+317 verbose addTmpTarball already have metadata; skipping unpack for ansi-html-community@0.0.8
+318 verbose get https://registry.npmjs.org/compression not expired, no request
+319 silly addNameRange number 2 { name: 'compression', range: '>=1.7.4 <2.0.0', hasData: true }
+320 silly addNameRange versions [ 'compression',
+320 silly addNameRange   [ '1.0.0',
+320 silly addNameRange     '1.0.1',
+320 silly addNameRange     '1.0.2',
+320 silly addNameRange     '1.0.3',
+320 silly addNameRange     '1.0.4',
+320 silly addNameRange     '1.0.5',
+320 silly addNameRange     '1.0.6',
+320 silly addNameRange     '1.0.7',
+320 silly addNameRange     '1.0.8',
+320 silly addNameRange     '1.0.9',
+320 silly addNameRange     '1.0.10',
+320 silly addNameRange     '1.0.11',
+320 silly addNameRange     '1.1.0',
+320 silly addNameRange     '1.1.1',
+320 silly addNameRange     '1.1.2',
+320 silly addNameRange     '1.2.0',
+320 silly addNameRange     '1.2.1',
+320 silly addNameRange     '1.2.2',
+320 silly addNameRange     '1.3.0',
+320 silly addNameRange     '1.3.1',
+320 silly addNameRange     '1.4.0',
+320 silly addNameRange     '1.4.1',
+320 silly addNameRange     '1.4.2',
+320 silly addNameRange     '1.4.3',
+320 silly addNameRange     '1.4.4',
+320 silly addNameRange     '1.5.0',
+320 silly addNameRange     '1.5.1',
+320 silly addNameRange     '1.5.2',
+320 silly addNameRange     '1.6.0',
+320 silly addNameRange     '1.6.1',
+320 silly addNameRange     '1.6.2',
+320 silly addNameRange     '1.7.0',
+320 silly addNameRange     '1.7.1',
+320 silly addNameRange     '1.7.2',
+320 silly addNameRange     '1.7.3',
+320 silly addNameRange     '1.7.4' ] ]
+321 silly addNamed compression@1.7.4
+322 verbose addNamed "1.7.4" is a plain semver version for compression
+323 verbose stack Error: Missing required argument #1
+323 verbose stack     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+323 verbose stack     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+323 verbose stack     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+323 verbose stack     at /usr/share/npm/lib/install/deps.js:457:7
+323 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+323 verbose stack     at /usr/share/npm/lib/fetch-package-metadata.js:37:12
+323 verbose stack     at addRequestedAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:82:5)
+323 verbose stack     at returnAndAddMetadata (/usr/share/npm/lib/fetch-package-metadata.js:117:7)
+323 verbose stack     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:134:20)
+323 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+324 verbose cwd /mnt/c/Users/samy_/Desktop/Cursos Platzi/Hooks/merch
+325 error Linux 4.4.0-19041-Microsoft
+326 error argv "/usr/bin/node" "/usr/bin/npm" "i" "webpack-dev-server"
+327 error node v8.10.0
+328 error npm  v3.5.2
+329 error code EMISSINGARG
+330 error typeerror Error: Missing required argument #1
+330 error typeerror     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+330 error typeerror     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+330 error typeerror     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+330 error typeerror     at /usr/share/npm/lib/install/deps.js:457:7
+330 error typeerror     at /usr/share/npm/node_modules/iferr/index.js:13:50
+330 error typeerror     at /usr/share/npm/lib/fetch-package-metadata.js:37:12
+330 error typeerror     at addRequestedAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:82:5)
+330 error typeerror     at returnAndAddMetadata (/usr/share/npm/lib/fetch-package-metadata.js:117:7)
+330 error typeerror     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:134:20)
+330 error typeerror     at /usr/share/npm/node_modules/iferr/index.js:13:50
+331 error typeerror This is an error with npm itself. Please report this error at:
+331 error typeerror     <http://github.com/npm/npm/issues>
+332 verbose exit [ 1, true ]
