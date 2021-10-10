@@ -10,6 +10,8 @@ html {
 :root {
     --primary: #002975;
     --secondary: #234075;
+    --primary-light: #0056F5;
+    --secondary-light: #4A87F7;
 
     --white: #fefefe;
     --black: #0e0e0e;
@@ -35,6 +37,10 @@ body {
     font-size: var(--md);
     font-weight: bold;
     margin: 12px;
+}
+
+.container__title.dark{
+    color: var(--white);
 }
 
 @media(min-width: 1024px){

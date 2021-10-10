@@ -1,11 +1,17 @@
 import React from 'react';
 import '../styles/Header.css';
 
-const Header = () => {
+const Header = ({ darkMode, setDarkMode }) => {
+
+
+  const changeMode = () => {
+    setDarkMode(!darkMode);
+  }
+
   return (
     <header className="header">
       <div className="header__title">
-      <i class="fas fa-laptop-code"></i>
+      <i className="fas fa-laptop-code"></i>
         <h2>samuel-mc</h2>
       </div>
 
@@ -14,7 +20,14 @@ const Header = () => {
           <li className="nav__item">Proyectos</li>
           <li className="nav__item">Blog</li>
           <li className="nav__item">Contacto</li>
-          <li className="nav__item">mode</li>
+          <li className={ darkMode ? 'nav__item dark' :"nav__item"}>
+            <div className="mode-button">
+              <span className="nav__item line"></span>
+              <button type="button" onClick={()=>changeMode()}>
+                {darkMode ? <i className="fas fa-sun"></i> : <i className="fas fa-moon"></i>}
+              </button>
+            </div>
+          </li>
         </ul>
       </nav>
     </header>

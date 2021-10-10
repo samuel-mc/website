@@ -13,20 +13,36 @@
     padding: 16px;
 }
 
+.proyects__item.dark{
+    background-color: var(--black);
+}
+
 .proyects__title{
     color: var(--secondary);
     font-size: var(--md);
     margin: 8px;
 }
+.proyects__title.dark{
+    color: var(--secondary-light);
+}
 
 .proyects__description{
+    color: var(--black);
     font-size: var(--sm);
     margin: 8px;
+}
+
+.proyects__description.dark{
+    color: var(--white);
 }
 
 .proyects__description a{
     text-decoration: none;
     color: var(--primary);
+}
+
+.proyects__description.dark a{
+    color: var(--primary-light);
 }
 
 @media(min-width: 320px){

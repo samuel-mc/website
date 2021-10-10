@@ -7,12 +7,17 @@
 .knowledge__item{
     background-color: var(--white);
     border-radius: 12px;
+    color: var(--secondary);
     box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 4px, inset rgba(100, 100, 100, 0.1) 0px 1px 1px;
     grid-area: auto;
 }
 
+.knowledge__item.dark{
+    background-color: var(--black);
+    color: var(--secondary-light);
+}
+
 .knowledge__icon {
-    color: var(--secondary);
     border-radius: 12px;
     margin: 12px;
 }
@@ -20,7 +25,6 @@
 .knowledge__name{
     font-size: var(--sm);
     font-weight: 700;
-    color: var(--secondary);
 }
 
 @media (min-width: 320px){

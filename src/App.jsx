@@ -12,6 +12,17 @@ import Footer from './components/Footer';
 import icon from './assets/images/icon.png';
 
 const App = () => {
+
+  const [ darkMode, setDarkMode ] = React.useState(true);
+
+  React.useEffect(()=>{
+    if(darkMode) {
+      document.body.style = 'background-color: var(--black)';
+    } else {
+      document.body.style = 'background-color: var(--white)';
+    }
+  })
+
   return (
     <>
       <Helmet>
@@ -19,12 +30,12 @@ const App = () => {
         <link rel="icon" type="image/png" href={icon} sizes="16x16" />
       </Helmet>
 
-      <Header />
+      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
 
       <main>
-        <Hero />
-        <Knowledge />
-        <Proyects />
+        <Hero darkMode={darkMode} />
+        <Knowledge darkMode={darkMode} />
+        <Proyects darkMode={darkMode} />
         <Contact />
       </main>
 

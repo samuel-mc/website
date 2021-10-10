@@ -2,6 +2,19 @@
     font-size: var(--lg);
 }
 
+.info__name.dark{
+    color: var(--white);
+}
+
+.info__description{
+    font-size: var(--sm);
+    color: var(--primary);
+}
+
+.info__description.dark{
+    color: var(--secondary-light);
+}
+
 .photo{
     width: 250px;
     margin: 4px;
@@ -16,10 +29,6 @@
         margin: 16px 0;
     }
 
-    .info__description{
-        font-size: var(--sm);
-        color: var(--primary);
-    }
 }
 
 

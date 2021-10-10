@@ -18,13 +18,34 @@ header {
 }
 
 .header__nav{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav__item{
     display: inline-block;
     margin: 8px;
     padding: 4px;
+}
+
+.nav__item.line{
+    background-color: #ffffff;
+    width: 16px;
+    border-radius: 4px;
+}
+
+.nav__item button{
+    padding: 4px;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateX(-40px);
+    transition: all 0.5s;
+}
+
+.nav__item.dark button{
+    transform: translateX(-20px);
 }
 
 @media (min-width: 320px){
@@ -53,6 +74,7 @@ header {
     .header__nav{
         background-color: var(--primary);
         font-size: var(--sm);
+        font-weight: 700;
         width: auto;
     }
 }
