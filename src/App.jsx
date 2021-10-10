@@ -3,13 +3,21 @@ import './styles/App.css';
 
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Knowledge from './Components/Knowledge';
+import Contact from './Components/Contact';
 import Footer from './components/Footer';
 
 const App = () => {
   return (
     <>
       <Header />
-      <Hero />
+      
+      <main>
+        <Hero />
+        <Knowledge />
+        <Contact />
+      </main>
+
       <Footer />
     </>
   );
