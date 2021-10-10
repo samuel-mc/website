@@ -4,7 +4,10 @@ import '../styles/Header.css';
 const Header = () => {
   return (
     <header className="header">
-      <div className="header__title">samuel-mc</div>
+      <div className="header__title">
+      <i class="fas fa-laptop-code"></i>
+        <h2>samuel-mc</h2>
+      </div>
 
       <nav className="header__nav">
         <ul>
