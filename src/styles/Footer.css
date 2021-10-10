@@ -1,26 +1,14 @@
 .footer{
     background-color: var(--primary);
+    font-size: var(--sm);
+    color: var(--white);
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding: 12px 0;
+    justify-content: space-evenly;
+    padding: 12px;
+    text-align: center;
 }
 
-.footer__text{
-    color: var(--white);
-    font-size: var(--sm);
-    margin: 0 12px;
-}
-
-.footer__icon{
+.footer__img {
     height: var(--md);
-}
-
-@media(max-width:425px){
-    .footer__text{
-        font-size: var(--sm);
-    }
-    .footer img{
-        display: none;
-    }
 }

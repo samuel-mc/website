@@ -5,9 +5,9 @@ import '../styles/Footer.css';
 const Footer = () => {
   return (
     <footer className="footer">
-      <img className="footer__icon" src={icon} alt="icon" />
-      <p className="footer__text">Samuel Medina Castro @samuel-mc</p>
-      <img className="footer__icon" src={icon} alt="icon" />
+      <img src={icon} className="footer__img" alt="samuel icon" />
+      <h4 className="footer__text">Samuel Medina Castro @samuel-mc</h4>
+      <img src={icon} className="footer__img" alt="samuel icon" />
     </footer>
   );
 };

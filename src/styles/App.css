@@ -19,7 +19,7 @@ html {
     --lg: 2.7em;
     --x-lg: 3.2rem;
 
-    --font-family: 'Roboto', sans-serif;
+    --font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -27,7 +27,7 @@ body {
 }
 
 .container{
-    margin: 24px;
+    margin: 24px 0;
 }
 
 .container__title{
