@@ -9,9 +9,10 @@ html {
 
 :root {
     --primary: #002975;
-    --secondary: #0044C2;
+    --secondary: #234075;
 
     --white: #fefefe;
+    --black: #0e0e0e;
 
     --sm: 1.7rem;
     --md: 2.2rem;
@@ -23,4 +24,21 @@ html {
 
 body {
     font-family: var(--font-family);
+}
+
+.container{
+    margin: 24px;
+}
+
+.container__title{
+    color: var(--black);
+    font-size: var(--md);
+    font-weight: bold;
+    margin: 12px;
+}
+
+@media(min-width: 1024px){
+    main{
+        margin: 0 80px;
+    }
 }

@@ -41,7 +41,7 @@
 
 @media(min-width: 1024px) {
     .presentation{
-        margin: 24px 80px;
+        margin: 24px 0px;
     }
 
     .presentation__info{
