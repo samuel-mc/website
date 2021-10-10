@@ -15,3 +15,12 @@
 .footer__icon{
     height: var(--md);
 }
+
+@media(max-width:425px){
+    .footer__text{
+        font-size: var(--sm);
+    }
+    .footer img{
+        display: none;
+    }
+}

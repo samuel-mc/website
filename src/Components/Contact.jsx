@@ -6,7 +6,7 @@ const Contact = () =>
         <h2 className="container__title">Contacto</h2>
         
         <div className="contact">
-            <a className="contact__item">
+            <a className="contact__item" href="mailto:smdoomed@gmail.com">
                 <i className="fas fa-envelope fa-3x contact__icon"></i>
                 <span className="contact__name">smdoomed@gmail.com</span>
             </a>
