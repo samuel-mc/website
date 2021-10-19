@@ -7,9 +7,9 @@ import '../styles/Proyects.css';
 const Proyects = ({ darkMode }) => {
   return (
     <section className="container">
-      <h2 className="container__title">Proyectos</h2>
+      <h2 className={darkMode ? 'container__title dark' : 'container__title'}>Proyectos</h2>
       <div className="proyects">
-        <div className={darkMode ? 'proyects__item dark' : 'proyects__item'}>
+        <div className={darkMode ? 'proyects__item proyect1 dark' : 'proyects__item proyect1'}>
           <h2 className={darkMode ? 'proyects__title dark' : 'proyects__title'}>
             Footeros
           </h2>
@@ -34,7 +34,7 @@ const Proyects = ({ darkMode }) => {
             </a>
           </h3>
         </div>
-        <div className={darkMode ? 'proyects__item dark' : 'proyects__item'}>
+        <div className={darkMode ? 'proyects__item proyect2 dark' : 'proyects__item proyect2'}>
           <h2 className={darkMode ? 'proyects__title dark' : 'proyects__title'}>
             Quotes Chidas
           </h2>

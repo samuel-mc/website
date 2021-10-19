@@ -10,6 +10,7 @@ import icon from './assets/images/icon.png';
 const Hero = lazy(() => import('./components/Hero'));
 const Knowledge = lazy(() => import('./components/Knowledge'));
 const Proyects = lazy(() => import('./components/Proyects'));
+const Blog = lazy(() => import('./components/Blog'));
 const Contact = lazy(() => import('./components/Contact'));
 
 
@@ -37,7 +38,8 @@ const App = () => {
           <Hero darkMode={darkMode} />
           <Knowledge darkMode={darkMode} />
           <Proyects darkMode={darkMode} />
-          <Contact />
+          <Blog darkMode={darkMode} />
+          <Contact darkMode={darkMode} />
         </Suspense>
       </main>
       <Footer />

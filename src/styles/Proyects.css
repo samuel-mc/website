@@ -9,7 +9,6 @@
     background-color: var(--white);
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 4px, inset rgba(100, 100, 100, 0.1) 0px 1px 1px;
-    margin: 16px;
     padding: 16px;
 }
 
@@ -48,6 +47,22 @@
 @media(min-width: 320px){
     .proyects__image{
         height: 150px;
+    }
+}
+
+@media(min-width: 720px){
+    .proyects{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 12px;
+    }
+
+    .proyects__item.proyect1{
+        grid-column: 1/6;
+    }
+    
+    .proyects__item.proyect2{
+        grid-column: 6/9;
     }
 }
 

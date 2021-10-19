@@ -1,9 +1,10 @@
 import React from 'react';
+import Container from './Container';
 import '../styles/Contact.css';
 
-const Contact = () => (
-  <section className="container" id="contact">
-    <h2 className="container__title">Contacto</h2>
+const Contact = ({ darkMode }) => (
+  <Container>
+    <h2 className={darkMode ? 'container__title dark' : 'container__title'}>Contacto</h2>
 
     <div className="contact">
       <a className="contact__item" href="mailto:smdoomed@gmail.com">
@@ -27,7 +28,7 @@ const Contact = () => (
         <span className="contact__name">GitHub</span>
       </a>
     </div>
-  </section>
+  </Container>
 );
 
 export default Contact;
