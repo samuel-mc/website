@@ -1,3 +1,11 @@
+.container {
+    min-height: 250px;
+}
+
+.container__content {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
 @media (min-width: 320px) {
     .container{
         grid-column: 1/5;
@@ -16,3 +24,16 @@
         grid-column: 2/12;
     }
 }
+
+@keyframes fadeIn {
+    from {
+        top: 10px;
+        filter: blur(2px), grayscale(100%);
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        filter: blur(0), grayscale(0);
+        opacity: 1;
+    }
+  }

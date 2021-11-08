@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
 import './styles/App.css';
 
@@ -7,11 +7,11 @@ import Footer from './components/Footer';
 
 import icon from './assets/images/icon.png';
 
-const Hero = lazy(() => import('./components/Hero'));
-const Knowledge = lazy(() => import('./components/Knowledge'));
-const Proyects = lazy(() => import('./components/Proyects'));
-const Blog = lazy(() => import('./components/Blog'));
-const Contact = lazy(() => import('./components/Contact'));
+import Hero from './components/Hero';
+import Knowledge from './components/Knowledge';
+import Proyects from './components/Proyects';
+import Blog from './components/Blog';
+import Contact from './components/Contact';
 
 
 const App = () => {
@@ -24,7 +24,7 @@ const App = () => {
     } else {
       document.body.style = 'background-color: var(--white)';
     }
-  })
+  }, [darkMode])
 
   return (
     <>
@@ -34,13 +34,11 @@ const App = () => {
       </Helmet>
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <main>
-        <Suspense fallback={<h1>cargando</h1>}>
           <Hero darkMode={darkMode} />
           <Knowledge darkMode={darkMode} />
           <Proyects darkMode={darkMode} />
           <Blog darkMode={darkMode} />
           <Contact darkMode={darkMode} />
-        </Suspense>
       </main>
       <Footer />
 

@@ -5,7 +5,6 @@ import '../styles/Contact.css';
 const Contact = ({ darkMode }) => (
   <Container>
     <h2 className={darkMode ? 'container__title dark' : 'container__title'}>Contacto</h2>
-
     <div className="contact">
       <a className="contact__item" href="mailto:smdoomed@gmail.com">
         <i className="fas fa-envelope fa-3x contact__icon"></i>
