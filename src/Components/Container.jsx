@@ -7,12 +7,13 @@ const Container = ({ children }) => {
 
     React.useEffect(()=>{
         const observer = new window.IntersectionObserver(entries => {
-        const { isIntersecting } = entries[0];
-        if(isIntersecting) {
-            setShow(true);
-            observer.disconnect();
-        }
+            const { isIntersecting } = entries[0];
+            if(isIntersecting) {
+                setShow(true);
+                observer.disconnect();
+            }
         })
+        console.log('Volví')
         observer.observe(element.current);
     }, [element]);
 
