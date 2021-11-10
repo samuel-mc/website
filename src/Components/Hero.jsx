@@ -12,7 +12,7 @@ const Hero = ({ darkMode }) => {
         <h2
           className={darkMode ? 'info__description dark' : 'info__description'}
         >
-          [ Web Developer ]
+          [ Web Developer]
         </h2>
       </div>
       <img className="photo" src={photo} alt="Profile photo" />

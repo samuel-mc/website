@@ -64,6 +64,10 @@
     .proyects__item.proyect2{
         grid-column: 6/9;
     }
+    
+    .proyects__item.proyect3{
+        grid-column: 2/8;
+    }
 }
 
 @media(min-width: 1024px){

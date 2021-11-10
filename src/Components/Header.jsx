@@ -1,5 +1,9 @@
+import { HashLink } from 'react-router-hash-link';
+import { FaLaptopCode, FaSun, FaMoon } from "react-icons/fa";
+
 import React from 'react';
 import '../styles/Header.css';
+
 
 const Header = ({ darkMode, setDarkMode }) => {
   const changeMode = () => {
@@ -9,23 +13,29 @@ const Header = ({ darkMode, setDarkMode }) => {
   return (
     <header className="header">
       <div className="header__title">
-        <i className="fas fa-laptop-code"></i>
+        <FaLaptopCode />
         <h2>samuel-mc</h2>
       </div>
 
       <nav className="header__nav">
         <ul>
-          <li className="nav__item">Proyectos</li>
-          <li className="nav__item">Blog</li>
-          <li className="nav__item">Contacto</li>
+          <li className="nav__item">
+            <HashLink to="#proyects">Proyectos</HashLink>
+          </li>
+          <li className="nav__item">
+            <HashLink to="#blog">Blog</HashLink>
+          </li>
+          <li className="nav__item">
+            <HashLink to="#contact">Contacto</HashLink>
+          </li>
           <li className={darkMode ? 'nav__item dark' : 'nav__item'}>
             <div className="mode-button">
               <span className="nav__item line"></span>
               <button type="button" onClick={() => changeMode()}>
                 {darkMode ? (
-                  <i className="fas fa-sun"></i>
+                  <FaSun/>
                 ) : (
-                  <i className="fas fa-moon"></i>
+                  <FaMoon />
                 )}
               </button>
             </div>

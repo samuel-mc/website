@@ -1,33 +1,35 @@
+import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 import React from 'react';
 import Container from './Container';
 import '../styles/Contact.css';
 
-const Contact = ({ darkMode }) => (
-  <Container>
+const Contact = ({ darkMode }) =>
+  <Container id="contact">
     <h2 className={darkMode ? 'container__title dark' : 'container__title'}>Contacto</h2>
     <div className="contact">
       <a className="contact__item" href="mailto:smdoomed@gmail.com">
-        <i className="fas fa-envelope fa-3x contact__icon"></i>
+      <FaEnvelope size='3em'/>
         <span className="contact__name">smdoomed@gmail.com</span>
       </a>
       <a
         className="contact__item"
         href="https://www.linkedin.com/in/samuel-mc/"
         target="_blank"
+        rel="noopener noreferrer" 
       >
-        <i className="fab fa-linkedin fa-3x contact__icon"></i>
+        <FaLinkedin size='3em'/>
         <span className="contact__name">Linkedin</span>
       </a>
       <a
         className="contact__item"
         href="https://github.com/samuel-mc"
         target="_blank"
+        rel="noopener noreferrer" 
       >
-        <i className="fab fa-github-square fa-3x contact__icon"></i>
+        <FaGithub size='3em'/>
         <span className="contact__name">GitHub</span>
       </a>
     </div>
-  </Container>
-);
+</Container>
 
 export default Contact;

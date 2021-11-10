@@ -1,24 +1,23 @@
 import React from 'react';
 import '../styles/Container.css';
 
-const Container = ({ children }) => {
+const Container = ({ children, id }) => {
     const element = React.useRef(null);
     const [show, setShow] = React.useState(false);
 
     React.useEffect(()=>{
         const observer = new window.IntersectionObserver(entries => {
-            const { isIntersecting } = entries[0];
-            if(isIntersecting) {
-                setShow(true);
-                observer.disconnect();
-            }
+        const { isIntersecting } = entries[0];
+        if(isIntersecting) {
+            setShow(true);
+            observer.disconnect();
+        }
         })
-        console.log('Volví')
         observer.observe(element.current);
     }, [element]);
 
     return (
-        <section className="container" ref={element}>
+        <section id={id} className="container" ref={element}>
             { show && <div className="container__content">
                 {children}
             </div>}

@@ -29,6 +29,15 @@ header {
     padding: 4px;
 }
 
+.nav__item a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.nav__item a:hover{
+    text-decoration: underline;
+}
+
 .mode-button{
     position: relative;
 }
