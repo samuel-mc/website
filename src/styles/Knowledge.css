@@ -87,11 +87,13 @@
         justify-content: left;
         padding: 0;
 
-        transition: all 0.5s ease;
+        transition: all 1s ease;
     }
 
     .knowledge__item:hover{
-        transform: translateX(4px);
+        transform: translateX(12px);
+        transition: all 0.4s ease;
+
     }
 
     .knowledge__item.item1{

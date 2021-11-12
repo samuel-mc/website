@@ -38,27 +38,64 @@ header {
     text-decoration: underline;
 }
 
-.mode-button{
+.switch {
+    background-color: var(--primary-light);
+    border-radius: 20px;
+    display: inline-block;
+    height: 20px;
     position: relative;
+    transition: all 0.3s;
+    width: 40px;
+    margin: -5px;
 }
 
-.nav__item.line{
-    background-color: #ffffff;
-    width: 16px;
-    border-radius: 4px;
-}
-
-.nav__item button{
-    padding: 4px;
-    border: none;
-    border-radius: 50%;
+.switch:after {
+    content: '';
     position: absolute;
-    transform: translateX(-40px);
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    background-color: white;
+    top: 1px;
+    left: 1px;
     transition: all 0.5s;
 }
 
-.nav__item.dark button{
-    transform: translateX(-20px);
+
+input[type='checkbox']:checked + .switch:after {
+    transform: translateX(20px);
+}
+
+input[type='checkbox']:checked + .switch {
+    background-color: var(--secondary-light);
+}
+
+input[type='checkbox']:checked + .switch span:last-child{
+    display: none;
+    transition: all 0.5s ease;
+}
+
+input[type='checkbox']:not(:checked) + .switch span:last-child{
+    position: absolute;
+    right: 4px;
+    transition: all 0.5s ease;
+
+}
+
+input[type='checkbox']:checked + .switch span:first-child{
+    position: absolute;
+    left: 4px;
+    transition: all 0.5s ease;
+}
+
+input[type='checkbox']:not(:checked) + .switch span:first-child{
+    display: none;
+    transition: all 0.5s ease;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
 }
 
 @media (min-width: 320px){

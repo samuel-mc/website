@@ -29,16 +29,15 @@ const Header = ({ darkMode, setDarkMode }) => {
             <HashLink to="#contact">Contacto</HashLink>
           </li>
           <li className={darkMode ? 'nav__item dark' : 'nav__item'}>
-            <div className="mode-button">
-              <span className="nav__item line"></span>
-              <button type="button" onClick={() => changeMode()}>
-                {darkMode ? (
-                  <FaSun/>
-                ) : (
-                  <FaMoon />
-                )}
-              </button>
-            </div>
+            <input type="checkbox" id="toggle" className="offscreen" onChange={changeMode}/>
+            <label for="toggle" className="switch">
+              <span>
+                <FaSun />
+              </span>
+              <span>
+                <FaMoon />
+              </span>
+            </label>
           </li>
         </ul>
       </nav>
