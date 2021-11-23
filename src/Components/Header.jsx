@@ -29,14 +29,22 @@ const Header = ({ darkMode, setDarkMode }) => {
             <HashLink to="#contact">Contacto</HashLink>
           </li>
           <li className={darkMode ? 'nav__item dark' : 'nav__item'}>
-            <input type="checkbox" id="toggle" className="offscreen" onChange={changeMode}/>
-            <label for="toggle" className="switch">
-              <span>
-                <FaSun />
-              </span>
-              <span>
-                <FaMoon />
-              </span>
+            <input type="checkbox" name="switch" id="switch" onChange={changeMode}/>
+            <label for="switch" >
+              {/* {
+                darkMode ? <FaMoon /> : <FaSun />
+              } */}
+
+              {
+                darkMode
+                ? 
+                  <span className="moon">
+                    <FaMoon />
+                  </span>
+                :  <span className="sun">
+                    <FaSun />
+                  </span>
+              }
             </label>
           </li>
         </ul>
