@@ -35,7 +35,7 @@ const App = () => {
           <Hero darkMode={darkMode} />
           <Knowledge darkMode={darkMode} />
           <Proyects darkMode={darkMode}/>
-          <Blog darkMode={darkMode} />
+          {/* <Blog darkMode={darkMode} /> */}
           <Contact darkMode={darkMode} />
       </main>
       <Footer />

@@ -22,9 +22,9 @@ const Header = ({ darkMode, setDarkMode }) => {
           <li className="nav__item">
             <HashLink to="#proyects">Proyectos</HashLink>
           </li>
-          <li className="nav__item">
+          {/* <li className="nav__item">
             <HashLink to="#blog">Blog</HashLink>
-          </li>
+          </li> */}
           <li className="nav__item">
             <HashLink to="#contact">Contacto</HashLink>
           </li>

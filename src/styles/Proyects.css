@@ -10,6 +10,7 @@
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 4px, inset rgba(100, 100, 100, 0.1) 0px 1px 1px;
     padding: 16px;
+    margin: 16px 0;
 }
 
 .proyects__item.dark{
@@ -23,6 +24,10 @@
 }
 .proyects__title.dark{
     color: var(--secondary-light);
+}
+
+.proyects__image-16-9{
+    aspect-ratio: 16/9;
 }
 
 .proyects__description{
@@ -54,24 +59,27 @@
     .proyects{
         display: grid;
         grid-template-columns: repeat(8, 1fr);
-        gap: 12px;
+        gap: 24px;
     }
 
     .proyects__item.proyect1{
-        grid-column: 1/6;
+        grid-column: 1/5;
     }
     
     .proyects__item.proyect2{
-        grid-column: 6/9;
+        grid-column: 5/9;
     }
     
     .proyects__item.proyect3{
-        grid-column: 2/8;
+        grid-column: 1/6;
+    }
+    .proyects__item.proyect4{
+        grid-column: 6/9;
     }
 }
 
 @media(min-width: 1024px){
     .proyects__image{
-        height: 300px;
+        height: 200px;
     }
 }
