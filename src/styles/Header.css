@@ -1,6 +1,6 @@
 .header {
     align-items: center;
-    background-color: var(--primary);
+    background-color: var(--secondary);
     color: var(--white);
     display: flex;
     font-family: var(--font-family);
@@ -95,7 +95,7 @@
     }
 
     .header__nav{
-        background-color: var(--primary);
+        background-color: var(--secondary);
         font-size: var(--sm);
         font-weight: 700;
         width: auto;

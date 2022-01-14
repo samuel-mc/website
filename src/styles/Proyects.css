@@ -8,7 +8,6 @@
 .proyects__item{
     border-radius: 12px;
     padding: 16px;
-    margin: 16px 0;
 }
 
 .proyects__title{
@@ -104,6 +103,9 @@
     .proyects__image{
         height: 150px;
     }
+    .proyects__item{
+        margin: 16px 0;
+    }
 }
 
 @media(min-width: 720px) {
@@ -111,6 +113,9 @@
         display: grid;
         grid-template-columns: repeat(2, minmax(300px, 1fr));
         gap: 24px;
+    }
+    .proyects__item{
+        margin: 0;
     }
 }
 

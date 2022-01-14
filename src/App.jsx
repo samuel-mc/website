@@ -31,7 +31,7 @@ const App = () => {
         <link rel="icon" type="image/png" href={icon} sizes="16x16" />
       </Helmet>
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-      <main>
+      <main className="main">
           <Hero darkMode={darkMode} />
           <Knowledge darkMode={darkMode} />
           <Proyects darkMode={darkMode}/>
