@@ -4,11 +4,14 @@ import Container from './Container';
 import '../styles/Contact.css';
 
 const Contact = ({ darkMode }) =>
-  <Container id="contact">
+  <Container>
     <h2 className={darkMode ? 'container__title dark' : 'container__title'}>Contacto</h2>
-    <div className="contact">
-      <a className="contact__item" href="mailto:smdoomed@gmail.com">
-      <FaEnvelope size='3em'/>
+    <div className={`contact ${darkMode ? 'dark' : ''}`}>
+      <a 
+        className="contact__item"
+        href="mailto:smdoomed@gmail.com"
+      >
+        <FaEnvelope size='3em'/>
         <span className="contact__name">smdoomed@gmail.com</span>
       </a>
       <a

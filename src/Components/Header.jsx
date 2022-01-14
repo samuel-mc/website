@@ -1,13 +1,13 @@
+import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { FaLaptopCode, FaAlignJustify, FaTimes  } from "react-icons/fa";
 import ModeButton from "./ModeButton"
-import React from 'react';
 import '../styles/Header.css';
 
 
 const Header = ({ darkMode, setDarkMode }) => {
   
-  const [isOpen, setIsOpen] = React.useState(true);
+  const [isOpen, setIsOpen] = React.useState(false);
   
   const changeMode = () => {
     setDarkMode(!darkMode);

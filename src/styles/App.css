@@ -19,7 +19,7 @@ html {
     --sm: 1.7rem;
     --md: 2.2rem;
     --lg: 2.7em;
-    --x-lg: 3.2rem;
+    --x-lg: 4rem;
 
     --font-family: 'Lato', sans-serif;
 }
@@ -40,6 +40,19 @@ body {
 }
 
 .container__title.dark{
+    color: var(--white);
+}
+
+.glass-item {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.025);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    color: var(--black);
+}
+
+.glass-item.dark {
     color: var(--white);
 }
 

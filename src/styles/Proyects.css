@@ -52,6 +52,10 @@
     color: var(--primary);
 }
 
+.proyects__item.dark .item__link:hover {
+    color: var(--white);
+}
+
 .proyects__item .item__link::before {
     border-radius: 12px;
 

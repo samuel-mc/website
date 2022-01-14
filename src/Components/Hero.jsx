@@ -2,8 +2,7 @@ import React from 'react';
 import photo from '../assets/images/photo.png';
 import '../styles/Hero.css';
 
-const Hero = ({ darkMode }) => {
-  return (
+const Hero = ({ darkMode }) => (
     <section className="presentation">
       <div className="presentation__info">
         <h1 className={darkMode ? 'info__name dark' : 'info__name'}>
@@ -15,9 +14,8 @@ const Hero = ({ darkMode }) => {
           [ Web Developer]
         </h2>
       </div>
-      <img className="photo" src={photo} alt="Profile photo" />
+      <img className="photo" src={photo} alt="Profile pict about me" />
     </section>
   );
-};
 
 export default Hero;
