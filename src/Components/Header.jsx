@@ -18,33 +18,35 @@ const Header = ({ darkMode, setDarkMode }) => {
   };
 
   return (
-    <header className="header">
-      <div className="header__title">
-        <FaLaptopCode />
-        <h2>samuel-mc</h2>
-        {
-          !isOpen
-            ? <FaAlignJustify onClick={toggleMenu} className="toogle__item" />
-            : <FaTimes onClick={toggleMenu} className="toogle__item" />
-        }
-
+    <header>
+      <div className='span__blue'></div>
+      <div className="header">
+        <div className="header__title">
+          <FaLaptopCode />
+          <h2>samuel-mc</h2>
+          {
+            !isOpen
+              ? <FaAlignJustify onClick={toggleMenu} className="toogle__item" />
+              : <FaTimes onClick={toggleMenu} className="toogle__item" />
+          }
+        </div>
+        <nav className={ isOpen ? "header__nav active" : "header__nav"}>
+          <ul>
+            <li className="nav__item">
+              <HashLink to="#proyects">Proyectos</HashLink>
+            </li>
+            {/* <li className="nav__item">
+              <HashLink to="#blog">Blog</HashLink>
+            </li> */}
+            <li className="nav__item">
+              <HashLink to="#contact">Contacto</HashLink>
+            </li>
+            <li className={darkMode ? 'nav__item dark' : 'nav__item'}>
+              <ModeButton changeMode={changeMode} darkMode={darkMode} />
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav className={ isOpen ? "header__nav active" : "header__nav"}>
-        <ul>
-          <li className="nav__item">
-            <HashLink to="#proyects">Proyectos</HashLink>
-          </li>
-          {/* <li className="nav__item">
-            <HashLink to="#blog">Blog</HashLink>
-          </li> */}
-          <li className="nav__item">
-            <HashLink to="#contact">Contacto</HashLink>
-          </li>
-          <li className={darkMode ? 'nav__item dark' : 'nav__item'}>
-            <ModeButton changeMode={changeMode} darkMode={darkMode} />
-          </li>
-        </ul>
-      </nav>
     </header>
   );
 };

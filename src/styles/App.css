@@ -13,8 +13,12 @@ html {
     --primary-light: #0056F5;
     --secondary-light: #4A87F7;
 
-    --white: #fef9e6;
-    --black: #0b1320;
+    --black: #0c0c0c;
+    --azul-oscuro: #002975;
+    --azul-medio: #1565c0;
+    --gris-oscuro: #424242;
+    --gris-claro: #9e9e9e;
+    --white: #ffffff;
 
     --sm: 1.7rem;
     --md: 2.2rem;
@@ -23,6 +27,9 @@ html {
 
     --font-family: 'Lato', sans-serif;
 }
+
+
+
 
 body {
     font-family: var(--font-family);
@@ -67,7 +74,7 @@ body {
     main{
         margin: 0 64px;
     }
-    main:after {
+   /*  main:after {
         background: rgb(35,64,117);
         background: linear-gradient(to right, rgba(35,64,117,1) 15%, rgba(11,19,32,1) 100%);
         content: "";
@@ -91,7 +98,7 @@ body {
         height: 100%;
         z-index: -2;
         clip-path: circle(25% at 1% 80%);
-    }
+    } */
 }
 
 @media (min-width: 1024px){

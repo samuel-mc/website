@@ -1,68 +1,83 @@
+/* eslint-disable react/self-closing-comp */
 import React from 'react';
+
 import Container from './Container';
-import hcmedical from '../assets/images/hcmedical.jpg';
-import albums from '../assets/images/albums.jpg';
-import quotes from '../assets/images/quotes.jpg';
-import matches from '../assets/images/matches.jpg';
 
 import '../styles/Proyects.css';
+import ImageSlider from './ImagesSlider';
+import useProyects from '../hooks/useProyects';
 
-const ProyectsItem = ({ darkMode, title, image, description, link }) => (
-  <div className={`glass-item proyects__item ${darkMode ? 'dark' : ''}`}>
+const ProyectsItem = ({ darkMode, proyect }) => (
+  <div className={`proyects__item ${darkMode ? 'dark' : ''}`}>
     <h2 className={darkMode ? 'proyects__title dark' : 'proyects__title'}>
-      {title}
+      {proyect?.title}
     </h2>
     <img
-      src={image}
+      src={proyect?.images[0]}
       alt="Screenshot about a page"
       className="proyects__image proyects__image-16-9"
     />
     <h3 className={`proyects__description ${darkMode ? 'dark' : ''}`}>
-      {description} <br />
+      {proyect?.description} <br />
     </h3>
-    
-    <a className="item__link" href={link} target="_blank" rel="noopener noreferrer">
-      Link
-    </a>
   </div>
 );
 
-const Proyects = ({ darkMode }) => (
-  <Container id="proyects">
-    <h2 className={darkMode ? 'container__title dark' : 'container__title'}>
-      Proyectos
-    </h2>
-    <div className="proyects" id="proyects">
-      <ProyectsItem
-        title="HC - Medical"
-        darkMode={darkMode}
-        image={hcmedical}
-        description="Sitio web que corresponde a un consultorio medico para personas con heridas crónicas."
-        link="https://www.hcmedicalmexico.com.mx/"
-      />
-      <ProyectsItem
-        title="Albums Store"
-        darkMode={darkMode}
-        image={albums}
-        description="Tienda de comercio virtual que permite comprar y vender discos."
-        link="https://discos-chidos.web.app/#/"
-      />
-      <ProyectsItem
-        title="Cool Quotes"
-        darkMode={darkMode}
-        image={quotes}
-        description="Sitio web que permite a los usuarios 'postear' sus frases favoritas."
-        link="https://frases-chidas.web.app/"
-      />
-      <ProyectsItem
-        title="Footeros"
-        darkMode={darkMode}
-        image={matches}
-        description="Sitio web que despliega los resultados de las mejores ligas del mundo."
-        link="https://samuel-mc.github.io/premier-league/"
-      />
-    </div>
-  </Container>
-);
+const Proyects = ({ darkMode }) => {
+  const [showModal, setShowModal] = React.useState(false);
+  const [currentProyect, setCurrentProyect] = React.useState(null);
+
+  const { proyects } = useProyects();
+
+  const handleShowModal = (proyect) => {
+    setCurrentProyect(proyect);
+    setShowModal(true);
+  };
+
+  return (
+    <Container id="proyects">
+      <h2 className={darkMode ? 'container__title dark' : 'container__title'}>
+        Proyectos
+      </h2>
+      <div className="proyects" id="proyects">
+        {proyects.map((proyect) => (
+          <button
+            type="button"
+            className="proyect__button"
+            onClick={() => handleShowModal(proyect)}
+          >
+            <ProyectsItem
+              key={proyect.title}
+              darkMode={darkMode}
+              proyect={proyect}
+            />
+          </button>
+        ))}
+      </div>
+
+      <div className={`modal__bg ${showModal ? 'showed' : 'hidden'}`}></div>
+      <div className={`modal__container ${showModal ? 'showed' : 'hidden'}`}>
+        <div className="modal__close">
+          <button type="button" onClick={() => setShowModal(false)}>
+            <i className="fas fa-times"></i>
+          </button>
+        </div>
+        <div className="modal__text">
+          <h3>{currentProyect?.title}</h3>
+          <p>{currentProyect?.description}</p>
+        </div>
+        <a
+          href={currentProyect?.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="modal__btn"
+        >
+          Ir al sitio
+        </a>
+        <ImageSlider items={currentProyect?.images} />
+      </div>
+    </Container>
+  );
+};
 
 export default Proyects;
